@@ -12,15 +12,10 @@ class LoadingIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return Platform.isIOS
         ? CupertinoActivityIndicator()
-        : Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              color != null
-                  ? CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation<Color>(color),
-                    )
-                  : CircularProgressIndicator(),
-            ],
-          );
+      : color != null
+          ? CircularProgressIndicator(
+              valueColor: AlwaysStoppedAnimation<Color>(color),
+            )
+          : CircularProgressIndicator(),
   }
 }
