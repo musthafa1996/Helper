@@ -16,6 +16,6 @@ class LoadingIndicator extends StatelessWidget {
           ? CircularProgressIndicator(
               valueColor: AlwaysStoppedAnimation<Color>(color),
             )
-          : CircularProgressIndicator(),
+          : CircularProgressIndicator();
   }
 }
