@@ -12,7 +12,12 @@ class AndroidDialogHelper {
             'Loading',
             style: TextStyle(color: Colors.black, fontSize: 16.0),
           ),
-          content: LoadingIndicator(),
+          content: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              LoadingIndicator()
+            ],
+          ),
         );
       },
     );
